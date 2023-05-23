@@ -1,139 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 
-    <title>Consumo API</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <!-- NAV -->
-      <nav>
-        <h1>MENU DE LA PAGINA</h1>
-      </nav>
-    </header>
-    <!-- MAIN -->
-    <main>
-      <div>
-        <canvas id="myChart" width="400" height="100"></canvas>
-      </div>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-      <!-- seccion -->
-      <section>
-        <!-- articulos -->
-        <article>
-          <h2>Api de Usuarios</h2>
-          <p>Selecciona la cantidad de datos que quieres mostrar</p>
-        </article>
+  <title>Consumo API</title>
+</head>
 
-        <article>
-          <!--  Filtro Datos -->
-          <div class="datos-api">
-            <label for="qty">Cantidad</label>
-            <input type="number" name="qty" id="qty" min="10" max="50" />
+<body>
+  <div></div>
+  <!-- HEADER -->
+  <header>
+    <!-- NAV -->
+    <nav>
+      <h1>MENU DE LA PAGINA</h1>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <div>
+      <canvas id="myChart" width="400" height="100"></canvas>
+    </div>
 
-            <select name="Paises" id="country">
-              <option value="au">Australia</option>
-              <option value="br">Brasil</option>
-              <option value="us">Estados Unidos</option>
-              <option value="mx">Mexico</option>
-              <option value="rs">Serbia</option>
-              <option value="nz">Nueva Zelanda</option>
-            </select>
+    <!-- seccion -->
+    <section>
+      <!-- articulos -->
+      <article>
+        <h2>Api de Usuarios</h2>
+        <p>Selecciona la cantidad de datos que quieres mostrar</p>
+      </article>
 
-            <input type="button" value="Mostrar" id="btn-datos" />
+      <article>
+        <!--  Filtro Datos -->
+        <div class="datos-api">
+          <label for="qty">Cantidad</label>
+          <input type="number" name="qty" id="qty" min="10" max="50" />
 
-            <!-- tabla cuenta edades -->
-            <table id="edades">
-              <thead>
-                <tr>
-                  <th>Edad</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <select name="Paises" id="country">
+            <option value="au">Australia</option>
+            <option value="br">Brasil</option>
+            <option value="us">Estados Unidos</option>
+            <option value="mx">Mexico</option>
+            <option value="rs">Serbia</option>
+            <option value="nz">Nueva Zelanda</option>
+          </select>
 
-            <!-- tabla cuenta generos -->
-            <table id="gender">
-              <thead>
-                <tr>
-                  <th>Genero</th>
-                  <th>Cantidad</th>
-                  <th>%</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <input type="button" value="Mostrar" id="btn-datos" />
 
-            <!-- tabla cuenta paises -->
-            <table id="datos">
-              <thead>
-                <tr>
-                  <th>País</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <!-- tabla cuenta edades -->
+          <table id="edades">
+            <thead>
+              <tr>
+                <th>Edad</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
 
-            <!-- tabla cuenta ciudades -->
-            <table id="ciudades">
-              <thead>
-                <tr>
-                  <th>Ciudad</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <!-- tabla cuenta generos -->
+          <table id="gender">
+            <thead>
+              <tr>
+                <th>Genero</th>
+                <th>Cantidad</th>
+                <th>%</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
 
-            <!-- tabla cuenta Estados -->
-            <table id="estados">
-              <thead>
-                <tr>
-                  <th>Estado</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <!-- tabla cuenta paises -->
+          <table id="datos">
+            <thead>
+              <tr>
+                <th>País</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
 
-            <!-- datos en tabla -->
-            <table id="resultados">
-              <thead>
-                <tr>
-                  <th>Imagen</th>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Edad</th>
-                  <th>Genero</th>
-                  <th>País</th>
-                  <th>Ciudad</th>
-                  <th>Estado</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </article>
-      </section>
-    </main>
+          <!-- tabla cuenta ciudades -->
+          <table id="ciudades">
+            <thead>
+              <tr>
+                <th>Ciudad</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
 
-    <!-- FOOTER -->
-    <footer>
-      <!--  -->
-      <h3>Pie de página</h3>
-    </footer>
-    <script src="./assets/js/main.js" type="module"></script>
+          <!-- tabla cuenta Estados -->
+          <table id="estados">
+            <thead>
+              <tr>
+                <th>Estado</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
 
-    <script src="./assets/js/charts.js"></script>
-  </body>
+          <!-- datos en tabla -->
+          <table id="resultados">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Genero</th>
+                <th>País</th>
+                <th>Ciudad</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!--  -->
+    <h3>Pie de página</h3>
+  </footer>
+  <script src="./assets/js/main.js" type="module"></script>
+
+  <script src="./assets/js/charts.js"></script>
+</body>
+
 </html>
