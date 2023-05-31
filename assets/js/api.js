@@ -18,9 +18,9 @@ const getUsuarios = async (e) => {
     const data = await fetch(dataApi);
     datos = await data.json(); // Almacenar los datos en la variable datos
 
-    console.log(qtyValue);
-    console.log(countryValue);
-    console.log(datos);
+    // console.log(qtyValue);
+    // console.log(countryValue);
+    // console.log(datos);
 
     return datos;
   } catch (error) {
@@ -55,5 +55,5 @@ export const resultados = async () => {
 qtyInput.addEventListener("change", resultados);
 country.addEventListener("change", resultados);
 
-console.log(await resultados());
+// console.log(await resultados());
 

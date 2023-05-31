@@ -16,14 +16,14 @@ export const edadtabla = async () => {
 
   edadTbody.innerHTML = "";
   Object.entries(countEdades).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value);
+    // console.log(key);
+    // console.log(value);
     edadTbody.innerHTML += `
     <tr>
     <td>${key}</td>
     <td>${value}</td>
     </tr>
     `;
-    console.log(edadTbody);
+    // console.log(edadTbody);
   });
 };

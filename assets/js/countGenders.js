@@ -1,7 +1,7 @@
 import { resultados } from "./api.js";
 
 // & cantidad de personas por ciudad
-console.log(await resultados());
+// console.log(await resultados());
 
 // & Muestro en HTML
 // Cuenta Usuarios por genero
@@ -19,14 +19,14 @@ export const genderstabla = async () => {
 
   gendersTbody.innerHTML = "";
   Object.entries(countGenders).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value);
+    // console.log(key);
+    // console.log(value);
     gendersTbody.innerHTML += `
     <tr>
     <td>${key}</td>
     <td>${value}</td>
     </tr>
     `;
-    console.log(gendersTbody);
+    // console.log(gendersTbody);
   });
 };

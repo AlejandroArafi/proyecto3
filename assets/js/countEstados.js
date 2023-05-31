@@ -16,14 +16,14 @@ export const estadostabla = async () => {
 
   estadoTbody.innerHTML = "";
   Object.entries(countEstados).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value);
+    // console.log(key);
+    // console.log(value);
     estadoTbody.innerHTML += `
     <tr>
     <td>${key}</td>
     <td>${value}</td>
     </tr>
     `;
-    console.log(estadoTbody);
+    // console.log(estadoTbody);
   });
 };
