@@ -5,19 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/jumbtron.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
 
     <title>Consumo API</title>
   </head>
   <body>
     <!-- HEADER -->
-    <div></div>
+
     <header>
-      <!-- NAV -->
-      <nav>
-        <h1>MENU DE LA PAGINA</h1>
+      <a href="#">
+        <h2 class="nombreT">Dashboard</h2>
+      </a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="mostrar-menu"> &#8801; </label>
+      <div class="inp">
+        <input placeholder="Search" type="text" />
+        <button type="submit">Buscar</button>
+      </div>
+      <nav class="menu">
+        <div class="inpBoton">
+          <input placeholder="Search" type="text" />
+          <button type="submit">Buscar</button>
+        </div>
+        <hr />
+        <a href="#">Quiénes Somos </a>
+        <a href="#">Contactos </a>
+        <span class="diViD">|</span>
+        <a href="#">Iniciar Sesión </a>
+        <a href="#">Regístrate </a>
+        <label for="check" class="esconder-menu">&#215;</label>
       </nav>
     </header>
+    <!-- JUMBOTRON -->
+    <section class="jbtron">
+      <div class="box-j1">
+        <h2>¿Qué es Dashbord?</h2>
+        <p class="p-drescripcion1">
+          Esta es una interfaz gráfica que tiene como objetivo mostrar
+          gráficamente los distintos datos de un número de personas.
+        </p>
+        <p class="p-drescripcion2">
+          Este panel de información está creado con fines académicos.
+        </p>
+      </div>
+      <div class="box-j2">
+        <img src="./assets/image/dash-img/folks.png" alt="" />
+      </div>
+    </section>
     <!-- MAIN -->
     <main>
       <div>
@@ -136,13 +174,55 @@
     </main>
 
     <!-- FOOTER -->
+
     <footer>
-      <!--  -->
-      <h3>Pie de página</h3>
+      <div>
+        <ul class="ul-foot-01">
+          <li>
+            <a href="#">
+              <img src="./assets/image/footer-Img/img-footer-f.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="Fimg-p"
+                src="./assets/image/footer-Img/img-footer-I.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="Fimg-p-2"
+                src="./assets/image/footer-Img/img-footer-T.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/image/footer-Img/img-footer-G.png" alt="" />
+            </a>
+          </li>
+        </ul>
+        <hr />
+        <div class="d-fpd">
+          <p>
+            © 2023. Todos los derechos reservados. Esta es una página de
+            aterrizaje ficticia para fines académicos.
+            
+          </p>
+        </div>
+      </div>
     </footer>
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
-    <script src="./assets/js/charts.js"></script>
+    <script src="./assets/js/charts.js" type="module"></script>
     <script src="./assets/js/main.js" type="module"></script>
   </body>
 </html>
+
