@@ -212,6 +212,7 @@ header {
       width: 100vw;
       display: flex;
       flex-direction: column;
+      
     }
   }
   @media (max-width: 876px) {
