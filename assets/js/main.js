@@ -6,8 +6,12 @@ import { edadtabla } from "./countEdad.js";
 import { estadostabla } from "./countEstados.js";
 import { tabladatos } from "./tabladatos.js";
 
+
+
 const qtyInput = document.getElementById("qty");
 const country = document.getElementById("country");
+
+
 
 qtyInput.addEventListener("change", ciudadestabla);
 country.addEventListener("change", ciudadestabla);

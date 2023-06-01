@@ -14,6 +14,7 @@ export const paistabla = async () => {
     }
   });
 
+  
   paisTbody.innerHTML = "";
   Object.entries(countPais).forEach(([key, value]) => {
     // console.log(key);

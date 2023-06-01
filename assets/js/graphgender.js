@@ -1,4 +1,3 @@
-
 export const genderUser = (data, container) =>{
    
 // console.log(container)
@@ -16,3 +15,4 @@ container.innerHTML+= `
 `
 })
 }
+

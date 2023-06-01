@@ -14,6 +14,7 @@ export const edadtabla = async () => {
     }
   });
 
+  
   edadTbody.innerHTML = "";
   Object.entries(countEdades).forEach(([key, value]) => {
     // console.log(key);

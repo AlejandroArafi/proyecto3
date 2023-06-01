@@ -5,6 +5,7 @@ return `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 25
 
 // console.log(colores)
 
+
 const ctx = document.getElementById("myChart").getContext("2d");
 let myChart = new Chart(ctx, {
   type: "bar",
@@ -32,4 +33,3 @@ let myChart = new Chart(ctx, {
   },
 })
 }
-

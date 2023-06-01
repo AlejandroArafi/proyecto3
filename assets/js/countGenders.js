@@ -5,11 +5,9 @@ const container = document.getElementById('cards')
 // & cantidad de personas por ciudad
 // console.log(await resultados());
 
-
 // & Muestro en HTML
 // Cuenta Usuarios por genero
 const gendersTbody = document.querySelector("#genero tbody");
-
 
 export const genderstabla = async () => {
 

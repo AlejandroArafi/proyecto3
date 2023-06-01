@@ -14,6 +14,7 @@ export const estadostabla = async () => {
     }
   });
 
+  
   estadoTbody.innerHTML = "";
   Object.entries(countEstados).forEach(([key, value]) => {
     // console.log(key);

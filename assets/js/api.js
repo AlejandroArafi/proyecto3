@@ -7,6 +7,7 @@ const linkApi = "https://randomuser.me/api/";
 
 let datos = null; // Variable para almacenar los datos de usuarios
 
+
 const getUsuarios = async (e) => {
   //   e.preventDefault();
 
