@@ -14,16 +14,17 @@ export const paistabla = async () => {
     }
   });
 
+  
   paisTbody.innerHTML = "";
   Object.entries(countPais).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value);
+    // console.log(key);
+    // console.log(value);
     paisTbody.innerHTML += `
     <tr>
     <td>${key}</td>
     <td>${value}</td>
     </tr>
     `;
-    console.log(paisTbody);
+    // console.log(paisTbody);
   });
 };

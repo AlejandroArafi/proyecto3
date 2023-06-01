@@ -1,18 +1,21 @@
+export const renderCiudad =(datos) =>{
+
+  const colores = datos.ciudades.map((el)=>{
+return `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)},0.5)`})
+
+// console.log(colores)
+
 
 const ctx = document.getElementById("myChart").getContext("2d");
 let myChart = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["col1", "col2", "col3"],
+    labels: datos.ciudades,
     datasets: [
       {
-        label: "Num datos",
-        data: [10, 9, 12],
-        backgroundColor: [
-          "rgb(66, 134, 244,0.5)",
-          "rgb(74, 135, 72,0.5)",
-          "rgb(229, 89, 50,0.5)",
-        ],
+        label: datos.name,
+        data: datos.cantidad,
+        backgroundColor: colores
       },
     ],
   },
@@ -28,4 +31,5 @@ let myChart = new Chart(ctx, {
       ],
     },
   },
-});
+})
+}
