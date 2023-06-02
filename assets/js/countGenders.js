@@ -1,13 +1,10 @@
 import { resultados } from "./api.js";
-import {genderUser} from "./graphgender.js"
+import {genderUser} from "./chartgender.js"
 
-const container = document.getElementById('cards')
-// & cantidad de personas por ciudad
-// console.log(await resultados());
+const container = document.getElementById('cards-gender')
 
-// & Muestro en HTML
-// Cuenta Usuarios por genero
 const gendersTbody = document.querySelector("#genero tbody");
+
 
 export const genderstabla = async () => {
 
@@ -20,6 +17,7 @@ export const genderstabla = async () => {
   container.innerHTML="";
   
   let countGenders = {};
+  
   const qtypersonas = await resultados();
   qtypersonas.forEach((item) => {
     if (countGenders[item.genero]) {
@@ -36,12 +34,12 @@ export const genderstabla = async () => {
     formatData.cantidad.push(value)
     // console.log(key);
     // console.log(value);
-    gendersTbody.innerHTML += `
-    <tr>
-    <td>${key}</td>
-    <td>${value}</td>
-    </tr>
-    `;
+    // gendersTbody.innerHTML += `
+    // <tr>
+    // <td>${key}</td>
+    // <td>${value}</td>
+    // </tr>
+    // `;
     // console.log(gendersTbody);
   });
  

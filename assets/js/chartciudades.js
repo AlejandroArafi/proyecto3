@@ -5,15 +5,14 @@ return `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 25
 
 // console.log(colores)
 
-
-const ctx = document.getElementById("myChart").getContext("2d");
+const ctx = document.getElementById("chart-Ciudades").getContext("2d");
 let myChart = new Chart(ctx, {
-  type: "bar",
+  type: "line",
   data: {
     labels: datos.ciudades,
     datasets: [
       {
-        label: datos.name,
+        label: 'Ciudades',
         data: datos.cantidad,
         backgroundColor: colores
       },
@@ -33,3 +32,4 @@ let myChart = new Chart(ctx, {
   },
 })
 }
+
