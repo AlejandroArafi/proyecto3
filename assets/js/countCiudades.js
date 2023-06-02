@@ -1,5 +1,5 @@
 import { resultados } from "./api.js";
-import {renderCiudad} from "./charts.js"
+import {renderCiudad} from "./chartciudades.js"
 // & cantidad de personas por ciudad
 // console.log(await resultados());
 
@@ -14,7 +14,6 @@ const formatData = {
   ciudades: [],
   cantidad:[]
 };
-
   const qtypersonas = await resultados();
   qtypersonas.forEach((item) => {
     if (countCiudades[item.ciudad]) {
@@ -31,12 +30,12 @@ const formatData = {
     formatData.ciudades.push(key)
     formatData.cantidad.push(value)
 
-    ciudadTbody.innerHTML += `
-    <tr>
-    <td>${key}</td>
-    <td>${value}</td>
-    </tr>
-    `;
+    // ciudadTbody.innerHTML += `
+    // <tr>
+    // <td>${key}</td>
+    // <td>${value}</td>
+    // </tr>
+    // `;
     // console.log(ciudadTbody);
  
 
@@ -45,6 +44,3 @@ renderCiudad(formatData)
 return formatData;
 
 };
-
-
-

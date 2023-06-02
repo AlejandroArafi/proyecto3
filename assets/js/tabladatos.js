@@ -2,7 +2,6 @@ import { resultados } from "./api.js";
 
 const tbody = document.querySelector("#resultados tbody");
 
-
 export const tabladatos = async () => {
   tbody.innerHTML = "";
   try {
