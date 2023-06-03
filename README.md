@@ -1,7 +1,7 @@
 # Proyecto numero 3 "Tablero de datos"
 Este es el proyecto n°3 para el Bootcamp FullStack de la UDD, el cual desarrollamos de manera grupal y utilizando HTML, CSS, JS, BOOTSTRAP, CHART.JS
 
-
+![iconmonstr-github-readme](https://github.com/AlejandroArafi/proyecto3/assets/122676412/d776ad5c-42e7-404e-911a-6909b17ea2b4)
 
 
 ## API de Búsqueda de Personas
