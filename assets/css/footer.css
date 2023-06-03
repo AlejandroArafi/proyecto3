@@ -2,7 +2,7 @@ body footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(244, 232, 208);
+  background-color: #e2a0b377;
 }
 body footer ul li {
   list-style: none;
